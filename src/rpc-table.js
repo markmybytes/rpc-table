@@ -1,12 +1,4 @@
 class RpcTable {
-    /** @type {HTMLTableElement} */
-    #table;
-
-    /** @type {Array<HTMLTableRowElement>} */
-    #children;
-
-    /** @type {Object<string, number>} */
-    #breakpoints;
 
     /**
     * Retrieves the headers of the table.
@@ -15,6 +7,15 @@ class RpcTable {
     get tableHeaders() {
         return [...this.#table.querySelectorAll("tr:nth-child(1) th")].map((node) => node.innerText);
     }
+
+    /** @type {HTMLTableElement} */
+    #table;
+
+    /** @type {Array<HTMLTableRowElement>} */
+    #children;
+
+    /** @type {Object<string, number>} */
+    #breakpoints;
 
     /** @type {number} */
     #resizeTimeout;
