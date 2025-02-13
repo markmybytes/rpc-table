@@ -68,6 +68,19 @@ class RpcTable {
         });
 
         this.#updateResponsiveClass();
+
+        this.#table.querySelectorAll("tbody > tr.rpc-expanded").forEach((tr) => {
+            /** @type {HTMLTableRowElement} */
+            let collapsible = tr.nextSibling;
+            /** @type {HTMLUListElement} */
+            let ul = collapsible.getElementsByClassName("rpc-details")[0];
+
+            ul.innerHTML = null;
+            tr.querySelectorAll("td.rpc-hidden").forEach((td) => {
+                ul.appendChild(this.#createChildLI(td));
+            })
+        })
+
         this.#updateToggleButton();
     }
 
