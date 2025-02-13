@@ -65,10 +65,10 @@
 <p align="right"> -->
 
 This project provides an alternative to DataTables's responsive plugin. JQuery is still an dependency of DataTables and 
-you may not want to include JQuery into your project. rpc-table is completely written vanilla Javascript without any dependency to 
+you may not want to include JQuery into your project. _rpc-table_ is completely written vanilla Javascript without any dependency to 
 make your table's columns collapse when needed.
 
-rpc-table is "listener safe". When a column are "hidden" and the cell content is an HTML node (e.g. button), the content will be **MOVED** into a collapsible menu (not clone or copy) 
+_rpc-table_ is "listener safe". When a column are "collapsed" and if the cell content is an HTML node (e.g. button), the content will be **MOVED** into a collapsible menu (not clone or copy) 
 so that the listener binded on the DOM node will in theory be retained.
 
 Althought this implementation is not efficient, it maximise the chance of retain the functionality and behaviour of third party reactive library like Alpine.js or HTMX, or custom event listener.
@@ -87,14 +87,12 @@ the source file to your project.
 
 ```html
 <link href=".../rpc-table.css" rel="stylesheet">
-
 <script src=".../rpc-table.js">
 ```
 
 ### CDN
 ```html
 <link href="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@<version>/dist/rpc-table.min.css" rel="stylesheet">
-
 <script src="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@<version>/dist/rpc-table.min.js"></script>
 ```
 
@@ -102,12 +100,10 @@ Example
 ```html
 <!-- Specific Version -->
 <link href="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@0.0.1/dist/rpc-table.min.css" rel="stylesheet">
-
 <script src="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@0.0.1/dist/rpc-table.min.js"></script>
 
 <!-- Latest -->
 <link href="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@main/dist/rpc-table.min.css" rel="stylesheet">
-
 <script src="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@main/dist/rpc-table.min.js"></script>
 ```
 
@@ -125,11 +121,23 @@ To make a table "responsive", you should create an instance of `RpcTable` with t
 const rpc = new RpcTable("table");
 ```
 
+Then, add the responsive class name to table headers. See [Options](#options) for the default class names.
+```html
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>User Name</th>
+        <th class="collapse-md">Email</th>
+        <th class="collapse-lg">Action</th>
+    </tr>
+</thead>
+```
+
 ### Methods
 
 1. `process()`
 
-   Reparse the table. rpc-table will gather the necessary information and manipulate the table to make the responsive functionality wokring. 
+   Reparse the table. _rpc-table_ will gather the necessary information and manipulate the table to make the responsive functionality wokring. 
    If new rows are added to the table, invoke this method.
 
 2. `render()`
@@ -144,7 +152,7 @@ const rpc = new RpcTable("table");
 
 ### Options
 
-rpc-table allows you to customise the behaviour by supplying an setting object to `RpcTable`.
+_rpc-table_ allows you to customise the behaviour by supplying an setting object to `RpcTable`.
 
 ```javascript
   const rpc = new RpcTable("table", {});
