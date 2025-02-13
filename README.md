@@ -63,6 +63,12 @@ This project provides an alternative to DataTables's responsive plugin. JQuery i
 you may not want to include JQuery into your project. rpc-table is completely written vanilla Javascript without any dependency to 
 make your table's columns collapse when needed.
 
+rpc-table is "listener safe". When a column are "hidden" and the cell content is an HTML node (e.g. button), the content will be **MOVED** into a collapsible menu (not clone or copy) 
+so that the listener binded on the DOM node will in theory be retained.
+
+Althought this implementation is not efficient, it maximise the chance of retain the functionality and behaviour of third party reactive library like Alpine.js or HTMX, or custom event listener.
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
