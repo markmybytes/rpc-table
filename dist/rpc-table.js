@@ -190,13 +190,17 @@ class RpcTable {
             let responsive = [...th.classList].filter(c => Object.keys(this.#breakpoints).includes(c));
             if (responsive.length == 0)
                 return;
+            
+            if (this.hiddenClasses().includes(responsive[0])) {
+                th.classList.add("rpc-hidden")
+            } else {
+                th.classList.remove("rpc-hidden")
+            }
 
             this.#table.querySelectorAll(`tbody tr:not(.child) td:nth-child(${i + 1})`).forEach((td) => {
                 if (this.hiddenClasses().includes(responsive[0])) {
-                    th.classList.add("rpc-hidden")
                     td.classList.add("rpc-hidden")
                 } else {
-                    th.classList.remove("rpc-hidden")
                     td.classList.remove("rpc-hidden")
                 }
             });
@@ -209,7 +213,7 @@ class RpcTable {
 
             if (tr.querySelector("td.rpc-hidden")) {
                 tr.classList.add("rpc-has-child")
-                tr.querySelector('td:not(.rpc-hidden)').classList.add("rpc-toggler");
+                tr.querySelector('td:not(.rpc-hidden)')?.classList.add("rpc-toggler");
             } else {
                 tr.classList.remove("rpc-has-child")
                 if (tr.classList.contains("rpc-expanded")) {
