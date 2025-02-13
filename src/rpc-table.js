@@ -25,7 +25,7 @@ class RpcTable {
 
     /**
      * @param {string} selector CSS selector
-     * @param {{breakpoints: Object<string, number>, resizeTimeout: number}, renderOnResize: boolean} options 
+     * @param {{breakpoints: Object<string, number>, resizeTimeout: number, renderOnResize: boolean}} options 
      */
     constructor(selector, options = {}) {
         this.#table = document.querySelector(selector);
