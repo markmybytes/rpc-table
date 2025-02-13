@@ -39,7 +39,7 @@ class RpcTable {
             "collapse-lg": 1200,
             "collapse": Number.MAX_SAFE_INTEGER,
         }
-        this.#resizeTimeout = options.resizeTimeout || 150;
+        this.#resizeTimeout = parseInt(options.resizeTimeout) || 150;
 
         this.process();
 
@@ -252,7 +252,11 @@ class RpcTable {
      * @param {UIEvent} event 
      */
     #handleResize(event) {
-        clearTimeout(this.#resizeTimeout);
-        this.#resizeTimeout = setTimeout(this.render.bind(this), this.#resizeTimeout);
+        if (this.#resizeTimeout <= 0) {
+            this.render.bind(this)
+        } else {
+            clearTimeout(this.#resizeTimeout);
+            this.#resizeTimeout = setTimeout(this.render.bind(this), this.#resizeTimeout);
+        }
     }
 }
