@@ -209,7 +209,7 @@ class RpcTable {
 
             if (tr.querySelector("td.rpc-hidden")) {
                 tr.classList.add("rpc-has-child")
-                tr.querySelector('td:not(.rpc-hidden)').classList.add("rpc-toggler");
+                tr.querySelector('td:not(.rpc-hidden)')?.classList.add("rpc-toggler");
             } else {
                 tr.classList.remove("rpc-has-child")
                 if (tr.classList.contains("rpc-expanded")) {
