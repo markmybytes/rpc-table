@@ -55,6 +55,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8c44b968-3647-460c-a8be-855a6981c4f5" width="80%">
+</p>
+
 <!-- <p align="center">
   <img src="https://github.com/SuperDumbTM/rpi-paper-eta/assets/71750702/df5b37b3-30d3-4504-87cb-6586f41e53db" width="70%">
 <p align="right"> -->
