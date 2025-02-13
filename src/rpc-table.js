@@ -13,19 +13,18 @@ class RpcTable {
     * @returns {Array<string>} An array containing the innerText of each th element in the first row of the table.
     */
     get tableHeaders() {
-        return [...this.#table.querySelectorAll("tr:nth-child(1) th")]
-            .map((node) => node.innerText);
+        return [...this.#table.querySelectorAll("tr:nth-child(1) th")].map((node) => node.innerText);
     }
 
     /** @type {number} */
     #resizeTimeout;
-     
+
     /** @type {null | number} */
     #resizeTimer;
 
     /**
      * @param {string} selector CSS selector
-     * @param {{breakpoints: Object<string, number>, resizeTimeout: number}} options 
+     * @param {{breakpoints: Object<string, number>, resizeTimeout: number}, renderOnResize: boolean} options 
      */
     constructor(selector, options = {}) {
         this.#table = document.querySelector(selector);
@@ -49,18 +48,23 @@ class RpcTable {
 
         this.#table.addEventListener("click", (event) => {
             if (!event.target.classList.contains("rpc-toggler"))
-                return
+                return;
 
             let tr = event.target.closest("tr");
             if (tr.classList.contains("rpc-expanded")) {
-                tr.nextSibling.remove()
+                tr.nextSibling.remove();
             } else {
-                tr.after(this.#children[tr.dataset.childIndex])
+                tr.after(this.#children[tr.dataset.childIndex]);
             }
 
-            tr.classList.toggle("rpc-expanded")
+            tr.classList.toggle("rpc-expanded");
         })
-        window.addEventListener("resize", this.#handleResize.bind(this))
+        
+        if (!options.hasOwnProperty("renderOnResize") ||
+            (options.hasOwnProperty("renderOnResize") && options.renderOnResize)
+        ) {
+            window.addEventListener("resize", this.#handleResize.bind(this));
+        }
     }
 
     /** 
