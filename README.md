@@ -56,11 +56,12 @@
 ## About The Project
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/690cd2e9-0c33-4014-94de-d4f91835e83f" width="60%">
+  <img src="https://github.com/user-attachments/assets/929aeb2b-f709-496b-b421-2096f636bc80" width="80%">
 </p>
 
+
 <!-- <p align="center">
-  <img src="https://github.com/SuperDumbTM/rpi-paper-eta/assets/71750702/df5b37b3-30d3-4504-87cb-6586f41e53db" width="70%">
+  <img src="https://github.com/SuperDumbTM/rpi-paper-eta/assets/71750702/df5b37b3-30d3-4504-87cb-6586f41e53db">
 <p align="right"> -->
 
 This project provides an alternative to DataTables's responsive plugin. JQuery is still an dependency of DataTables and 
