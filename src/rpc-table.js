@@ -156,6 +156,7 @@ class RpcTable {
                                 this.#table.rows[row.rowIndex].cells[parseInt(li.dataset.column)].innerHTML = span.innerHTML;
                             }
                             li.remove();
+                            break;
                         }
                         break;
                     }
