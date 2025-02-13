@@ -21,7 +21,7 @@
   <h3 align="center">rpc-table</h3>
 
   <p align="center">
-    Make tables to accommodate different viewport size.
+    A vanilla javascript implementation of DataTables Responsive extension.
     <br />
     <br />
     <a href="https://github.com/SuperDumbTM/rpc-table/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
