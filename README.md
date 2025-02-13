@@ -56,7 +56,7 @@
 ## About The Project
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8c44b968-3647-460c-a8be-855a6981c4f5" width="80%">
+  <img src="https://github.com/user-attachments/assets/690cd2e9-0c33-4014-94de-d4f91835e83f" width="60%">
 </p>
 
 <!-- <p align="center">
