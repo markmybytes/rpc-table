@@ -19,6 +19,9 @@ class RpcTable {
 
     /** @type {number} */
     #resizeTimeout;
+     
+    /** @type {null | number} */
+    #resizeTimer;
 
     /**
      * @param {string} selector CSS selector
@@ -39,6 +42,7 @@ class RpcTable {
             "collapse-lg": 1200,
             "collapse": Number.MAX_SAFE_INTEGER,
         }
+        this.#resizeTimer = null;
         this.#resizeTimeout = parseInt(options.resizeTimeout) || 150;
 
         this.process();
@@ -253,10 +257,10 @@ class RpcTable {
      */
     #handleResize(event) {
         if (this.#resizeTimeout <= 0) {
-            this.render.bind(this)
+            this.render.bind(this);
         } else {
-            clearTimeout(this.#resizeTimeout);
-            this.#resizeTimeout = setTimeout(this.render.bind(this), this.#resizeTimeout);
+            clearTimeout(this.#resizeTimer);
+            this.#resizeTimer = setTimeout(this.render.bind(this), this.#resizeTimeout);
         }
     }
 }
