@@ -4,7 +4,8 @@
 
 <!-- PROJECT SHIELDS -->
 <div align="center">
-  
+
+  [![Tag][tag-shield]][tag-url]
   [![Contributors][contributors-shield]][contributors-url]
   [![Forks][forks-shield]][forks-url]
   [![Stargazers][stars-shield]][stars-url]
@@ -56,7 +57,7 @@
 ## About The Project
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/929aeb2b-f709-496b-b421-2096f636bc80" width="80%">
+  <img src="https://github.com/user-attachments/assets/929aeb2b-f709-496b-b421-2096f636bc80" alt="project screen shot" width="80%">
 </p>
 
 
@@ -210,6 +211,8 @@ _rpc-table_ allows you to customise the behaviour by supplying an setting object
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[tag-url]: https://github.com/markmybytes/rpc-table/releases
+[tag-shield]: https://img.shields.io/github/v/tag/markmybytes/rpc-table?style=for-the-badge&label=LATEST&color=%23B1B1B1
 [contributors-shield]: https://img.shields.io/github/contributors/SuperDumbTM/rpc-table.svg?style=for-the-badge
 [contributors-url]: https://github.com/SuperDumbTM/rpc-table/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/SuperDumbTM/rpc-table.svg?style=for-the-badge
