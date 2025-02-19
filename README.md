@@ -25,9 +25,9 @@
     A vanilla javascript implementation of DataTables Responsive extension.
     <br />
     <br />
-    <a href="https://github.com/SuperDumbTM/rpc-table/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/markmybytes/rpc-table/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/SuperDumbTM/rpc-table/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/markmybytes/rpc-table/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -62,7 +62,7 @@
 
 
 <!-- <p align="center">
-  <img src="https://github.com/SuperDumbTM/rpi-paper-eta/assets/71750702/df5b37b3-30d3-4504-87cb-6586f41e53db">
+  <img src="https://github.com/markmybytes/rpi-paper-eta/assets/71750702/df5b37b3-30d3-4504-87cb-6586f41e53db">
 <p align="right"> -->
 
 This project provides an alternative to DataTables's responsive plugin. JQuery is still an dependency of DataTables and 
@@ -83,7 +83,7 @@ Althought this implementation is not efficient, it maximise the chance of retain
 ## Getting Started
 
 ### Include the source
-You can go to the [Releases](https://github.com/SuperDumbTM/rpc-table/releases) page the download the source and include 
+You can go to the [Releases](https://github.com/markmybytes/rpc-table/releases) page the download the source and include 
 the source file to your project.
 
 ```html
@@ -93,19 +93,19 @@ the source file to your project.
 
 ### CDN
 ```html
-<link href="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@<version>/dist/rpc-table.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@<version>/dist/rpc-table.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/markmybytes/rpc-table@<version>/dist/rpc-table.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/markmybytes/rpc-table@<version>/dist/rpc-table.min.js"></script>
 ```
 
 Example
 ```html
 <!-- Specific Version -->
-<link href="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@0.0.1/dist/rpc-table.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@0.0.1/dist/rpc-table.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/markmybytes/rpc-table@0.0.1/dist/rpc-table.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/markmybytes/rpc-table@0.0.1/dist/rpc-table.min.js"></script>
 
 <!-- Latest -->
-<link href="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@main/dist/rpc-table.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/gh/superdumbtm/rpc-table@main/dist/rpc-table.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/markmybytes/rpc-table@main/dist/rpc-table.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/markmybytes/rpc-table@main/dist/rpc-table.min.js"></script>
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -213,13 +213,13 @@ _rpc-table_ allows you to customise the behaviour by supplying an setting object
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [tag-url]: https://github.com/markmybytes/rpc-table/releases
 [tag-shield]: https://img.shields.io/github/v/tag/markmybytes/rpc-table?style=for-the-badge&label=LATEST&color=%23B1B1B1
-[contributors-shield]: https://img.shields.io/github/contributors/SuperDumbTM/rpc-table.svg?style=for-the-badge
-[contributors-url]: https://github.com/SuperDumbTM/rpc-table/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/SuperDumbTM/rpc-table.svg?style=for-the-badge
-[forks-url]: https://github.com/SuperDumbTM/rpc-table/network/members
-[stars-shield]: https://img.shields.io/github/stars/SuperDumbTM/rpc-table.svg?style=for-the-badge
-[stars-url]: https://github.com/SuperDumbTM/rpc-table/stargazers
-[issues-shield]: https://img.shields.io/github/issues/SuperDumbTM/rpc-table.svg?style=for-the-badge
-[issues-url]: https://github.com/SuperDumbTM/rpc-table/issues
-[license-shield]: https://img.shields.io/github/license/SuperDumbTM/rpc-table.svg?style=for-the-badge
-[license-url]: https://github.com/SuperDumbTM/rpc-table/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/markmybytes/rpc-table.svg?style=for-the-badge
+[contributors-url]: https://github.com/markmybytes/rpc-table/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/markmybytes/rpc-table.svg?style=for-the-badge
+[forks-url]: https://github.com/markmybytes/rpc-table/network/members
+[stars-shield]: https://img.shields.io/github/stars/markmybytes/rpc-table.svg?style=for-the-badge
+[stars-url]: https://github.com/markmybytes/rpc-table/stargazers
+[issues-shield]: https://img.shields.io/github/issues/markmybytes/rpc-table.svg?style=for-the-badge
+[issues-url]: https://github.com/markmybytes/rpc-table/issues
+[license-shield]: https://img.shields.io/github/license/markmybytes/rpc-table.svg?style=for-the-badge
+[license-url]: https://github.com/markmybytes/rpc-table/blob/master/LICENSE.txt
